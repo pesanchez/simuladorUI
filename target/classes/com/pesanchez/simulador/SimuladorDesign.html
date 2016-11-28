@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;bbva&quot;}">
+ </head> 
+ <body> 
+  <vaadin-css-layout style-name="principal-simulador"> 
+   <vaadin-css-layout      _id="clyDatosProducto"       height="20%" style-name="contenedores-simulador"> 
+	    <vaadin-combo-box  _id="cmbSubproducto" 		input-prompt="Seleccione" 	height="21px" caption="Sub producto:" style-name="simulador-subproducto"></vaadin-combo-box> 
+	    <vaadin-text-field _id="txtMonto" 				width="22%" height="21px"	caption="Monto:"	maxlength="9"></vaadin-text-field> 
+	    <vaadin-text-field _id="txtCantidadPlazo" 		width="12%" height="21px"	caption="Plazo:"	maxlength="4"></vaadin-text-field>
+	    <vaadin-combo-box  _id="cmbPlazo" 				input-prompt="Meses" 			width="23%" height="21px"></vaadin-combo-box> 
+	    <vaadin-text-field _id="txtTasa" 				width="15%" height="21px"	caption="Tasa:"		maxlength="6"></vaadin-text-field> 
+	    <vaadin-text-field _id="txtValorComercial"		width="21%" height="21px"	caption="Valor comercial:"	maxlength="9"></vaadin-text-field> 
+	    <vaadin-text-field _id="txtDiaPago" 			width="8%" height="21px"	caption="Día de pago:"	maxlength="2"></vaadin-text-field> 
+	    <vaadin-text-field _id="txtGracia" 				input-prompt="0"		width="12%" height="21px"	caption="Gracia:"	maxlength="4"></vaadin-text-field> 
+	    <vaadin-combo-box  _id="cmbUnidadPlazoGracia" 	input-prompt="Meses" 			width="20%" height="21px"></vaadin-combo-box> 
+   </vaadin-css-layout> 
+   <vaadin-css-layout 		_id="clyPeriodicidades" height="17%"	style-name="contenedores-simulador"> 
+	    <vaadin-label 		_id="lblPeriodicidad" width="100%" height="21px">Periodicidades:</vaadin-label> 
+	    <vaadin-text-field 	_id="txtPrincipal" 				input-prompt="1" 				width="12%" height="21px"	caption="Principal:"			maxlength="4"></vaadin-text-field> 
+	    <vaadin-combo-box   _id="cmbUnidadPlazoPrincipal"	input-prompt="Meses" 			width="20%" height="21px"></vaadin-combo-box> 
+	    <vaadin-text-field  _id="txtInteresGracia" 			input-prompt="0" 				width="12%" height="21px"	caption="Interés de gracia:"	maxlength="4"></vaadin-text-field> 
+	    <vaadin-combo-box   _id="cmbUnidadInteresGracia"	input-prompt="Meses" 			width="20%" height="21px"></vaadin-combo-box> 
+   </vaadin-css-layout> 
+   <vaadin-css-layout 			_id="clyTipoCuotas" height="18%"	style-name="contenedores-simulador"> 
+	    <vaadin-label 			_id="lblCuotas" width="100%">Cuotas:</vaadin-label> 
+	    <vaadin-option-group 	_id="optCuotas" style-name="" width="28%"> 
+		     <option>Simples</option> 
+		     <option>Adicionales</option> 
+	    </vaadin-option-group> 
+	    <vaadin-css-layout  _id="clyMesesAdicionales" 					width="68%" height-full> 
+		     <vaadin-combo-box  _id="cmbUnidadPlazoAdicionalesMesUno" 		width="30%" height="23px" input-prompt="Mes"></vaadin-combo-box>
+		     <vaadin-text-field _id="txtCuotaAdicionalMesUno"  		  		width="12%" height="23px" input-prompt="0" maxlength="1"></vaadin-text-field> 
+			 <vaadin-combo-box  _id="cmbUnidadPlazoAdicionalesMesDos" 		width="30%" height="23px" input-prompt="Mes"></vaadin-combo-box>
+		     <vaadin-text-field _id="txtCuotaAdicionalMesDos"  		  		width="12%" height="23px" input-prompt="0" maxlength="1"></vaadin-text-field> 
+		     <vaadin-combo-box  _id="cmbUnidadPlazoAdicionalesMesTres" 		width="30%" height="23px" input-prompt="Mes"></vaadin-combo-box>
+		     <vaadin-text-field _id="txtCuotaAdicionalMesTres"  			width="12%" height="23px" input-prompt="0" maxlength="1"></vaadin-text-field> 
+		     <vaadin-combo-box  _id="cmbUnidadPlazoAdicionalesMesCuatro"	width="30%" height="23px" input-prompt="Mes"></vaadin-combo-box>
+		     <vaadin-text-field _id="txtCuotaAdicionalMesCuatro"  			width="12%" height="23px" input-prompt="0" maxlength="1"></vaadin-text-field> 
+	    </vaadin-css-layout> 
+   </vaadin-css-layout> 
+   <vaadin-css-layout _id="clyDatosSeguro" 			height="22%"	style-name="contenedores-simulador"> 
+	    <vaadin-combo-box _id="cmbTipoSeguro" 		input-prompt="Seleccione tipo de seguro" 	width="47%" 	height="21px"	caption="Tipo de seguro:" style-name="simulador-tipo-seguro"></vaadin-combo-box> 
+	    <vaadin-combo-box _id="cmbTipoBien" 		input-prompt="Seleccione tipo de bien" 		width="47%" 	height="21px"	caption="Tipo de bien:"	style-name="simulador-tipo-bien"></vaadin-combo-box> 
+	    <vaadin-combo-box _id="cmbTipoDesgravamen" 	input-prompt="Seleccione tipo desgravamen" 	width="47%" 	height="21px"	caption="Tipo desgravamen:" style-name="simulador-tipo-desgravamen"></vaadin-combo-box> 
+	    <vaadin-popup-date-field _id="pdfNacimientoTitularUno" style-name="" width="25%" height="21px"	caption="Nacimiento titular uno:" style-name="simulador-nacimiento-titular-uno"></vaadin-popup-date-field> 
+	    <vaadin-popup-date-field _id="pdfNacimientoTitularDos" style-name="" width="25%" height="21px"	caption="Nacimiento titular dos:" style-name="simulador-nacimiento-titular-dos"></vaadin-popup-date-field> 
+   </vaadin-css-layout> 
+<!--    <vaadin-css-layout _id="clyAdicionalesCronograma" 	width="98%" height="7%">  -->
+	    
+<!-- <!-- 	    <vaadin-check-box _id="chkGraciaCapitalizacion" width="48%" height="21px"	caption="Gracia con capitalización"></vaadin-check-box>  --> -->
+		
+<!--    </vaadin-css-layout> -->
+   <vaadin-css-layout _id="clyBotonera" 	height="6%"	style-name="contenedores-simulador">
+   		<vaadin-check-box _id="chkEnvioFisico" 			width="48%" height="21px"	caption="Envío físico de información" style-name="simulador-chk-envio-fisico"></vaadin-check-box>  
+      	<v-button plain-text="" _id="btnSimular" :expand="0.1">Simular</v-button>
+   </vaadin-css-layout>  
+  </vaadin-css-layout>  
+ </body>
+</html>

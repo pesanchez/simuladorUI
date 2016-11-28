@@ -1,0 +1,42 @@
+@import "mytheme.scss";
+@mixin simulador{
+	
+	.principal-simulador {
+		margin: 1%;
+		width: 98%;
+		height: 98%; 
+	}
+	.contenedores-simulador {
+		margin: 1%;
+		padding-top: 1%;
+		width: 98%;
+		border-top: solid 1px green;
+		
+	}
+	.simulador-subproducto {
+		width: 50%;
+    	margin-right: 28%;
+ 	}
+ 	.simulador-tipo-seguro {
+    	margin-right: 30%;
+ 	}
+ 	.simulador-tipo-bien {
+    	margin-right: 35%;
+ 	}
+ 	.simulador-tipo-desgravamen {
+    	margin-right: 25%;
+ 	}
+ 	.simulador-nacimiento-titular-uno {
+    	margin-right: 43%;
+ 	}
+ 	.simulador-nacimiento-titular-dos {
+    	margin-right: 43%;
+ 	}
+ 	.simulador-chk-envio-fisico {
+    	margin-top: 2%;
+    	margin-right: 30%;
+ 	}
+ 	.simulador .v-caption{
+ 	}
+ 	
+}
